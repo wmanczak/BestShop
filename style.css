@@ -1,18 +1,24 @@
 *{
-  box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Raleway', sans-serif;
+
 
 }
 .container{
-   width: 1300px;
+    width: 100%;
     margin: 0 auto;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     opacity: 1;
+
 }
 .header-container{
     width: 100%;
     display: flex;
- justify-content:space-between;
+    justify-content:space-between;
 
 }
 
@@ -28,10 +34,12 @@
     font-weight: 700;
     font-size: 0.6875rem;
     text-transform:uppercase ;
-    padding: 28px 18px 22px;
+    padding: 25px 18px 30px ;
     border-bottom: 4px solid transparent;
     letter-spacing: 0.1875rem;
     text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+
 
 }
 
@@ -42,19 +50,19 @@
 }
 
 .nav-elements{
-    padding-top: 20px;
+    padding-top: 13px;
 
 }
 .nav-elements:last-child{
     padding-right:20px;
 }
 
- .header-logo{
-     color: #08A6E4;
-     font: normal normal 300 32px/37px Raleway;
-     opacity: 1;
-     padding-left: 30px;
- }
+.header-logo{
+    color: #08A6E4;
+    font: normal normal 300 32px/37px Raleway;
+    opacity: 1;
+    padding-left: 30px;
+}
 
 
 .section-container {
@@ -90,7 +98,7 @@
     background: #08A6E4 0%0 no-repeat padding-box;
     box-shadow: 5px 10px 14px #07ACE629;
     border-radius: 40px;
-  padding: 23px 120px 23px 120px;
+    padding: 23px 120px 23px 120px;
     font: normal normal bold 16px/22px Open Sans;
     color: #FFFFFF;
     opacity: 1;
@@ -130,18 +138,18 @@
     opacity: 1;
     padding-bottom: 5px;
     padding-right: 5px;
-     margin: 0;
+    margin: 0;
 }
 
 
-.box-background-1{
+.box-background-1 {
     background: #FB3B64 0% 0% no-repeat padding-box;
     opacity: 1;
     border-radius: 50%;
     width: 63px;
     height: 63px;
     position: relative;
-
+    margin-left: 20px;
 }
 
 
@@ -149,15 +157,17 @@
     z-index: 1;
     position: absolute;
 }
-.box-background-2{
+.box-background-2 {
     background: #08A6E4 0% 0% no-repeat padding-box;
     opacity: 1;
     border-radius: 50%;
     width: 63px;
     height: 63px;
     position: relative;
-     padding-top: 10px;
+    padding-top: 10px;
+    margin-left: 25px;
 }
+
 .box-2{
 
     position: absolute;
@@ -172,35 +182,38 @@
     height: 63px;
     position: relative;
     padding-top: 4px;
+    margin-left: 10px;
 
 }
 .box-3{
     z-index: 1;
-position: absolute;
+    position: absolute;
 }
 
 
 
 .benefits-menu {
     background: #F7F7F7 0% 0% no-repeat padding-box;
-  padding: 100px 0;
+    padding: 100px 0;
 }
 
 .menu-container{
-    padding-bottom: 40px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 
 
 }
 .menu-1{
     width: 1000px;
     background-color: white;
-    margin-left: 300px;
-  padding-top: 40px;
+    padding-top: 40px;
     text-align: right;
-display: flex;
+    display: flex;
     justify-content: space-around;
     align-items: flex-start;
-height: 370px;
+    height: 370px;
 }
 .menu-description{
 
@@ -270,7 +283,6 @@ height: 370px;
     margin-top: 50px;
     width: 1000px;
     background-color: white;
-    margin-left: 300px;
     padding-top: 40px;
     text-align: left;
     display: flex;
@@ -279,7 +291,7 @@ height: 370px;
 
 }
 .menu-description-2{
-padding-left: 110px;
+    padding-left: 110px;
 
 }
 .menu-text-2{
@@ -293,7 +305,7 @@ padding-left: 110px;
 }
 .menu-text-2::after{
     content: "";
-  background: 4px #08A6E4;
+    background: 4px #08A6E4;
     opacity: 1;
     max-width: 400px;
     height: 4px;
@@ -340,19 +352,18 @@ padding-left: 110px;
     width: 550px;
     height: 370px;
     background-color: white;
-    margin-left: 300px;
     padding-top: 40px;
     margin-top: 50px;
-  display: flex;
+    display: flex;
     align-items: flex-end;
 
 
 }
 .menu-description-3{
-margin-left: 80px;
+    margin-left: 80px;
 }
 .menu-title-3{
-width: 300px;
+    width: 300px;
     text-align: left;
     font: normal normal normal 36px/42px Raleway;
     letter-spacing: 0px;
@@ -362,7 +373,7 @@ width: 300px;
 }
 .menu-text-3{
     width: 450px;
-margin-bottom: 80px;
+    margin-bottom: 80px;
 }
 .menu-text-3::after{
     content: "";
@@ -377,7 +388,7 @@ margin-bottom: 80px;
 
 
 .trumpet-square{
-width: 440px;
+    width: 440px;
     height: 370px;
 
 }
@@ -388,7 +399,7 @@ width: 440px;
 
 .Trumpet-1 img {
     padding-left: 120px;
-  padding-top: 110px;
+    padding-top: 110px;
     position: relative;
 }
 .Trumpet-1::before{
@@ -511,13 +522,13 @@ width: 440px;
 
 }
 .pricing-text-3{
-margin-top: 25px;
+    margin-top: 25px;
 
 }
 
 .pricing-list-1{
     list-style: none;
-margin-bottom: 76px;
+    margin-bottom: 76px;
     padding-top: 60px;
 
 }
@@ -557,8 +568,8 @@ margin-bottom: 76px;
     width: 11px;
     height: 11px;
     background-image: url("../BestShop/Ckechmark-1.svg");
-   display: inline-block;
-   margin-right: 4px;
+    display: inline-block;
+    margin-right: 4px;
 }
 
 .pricing-content-not::before{
@@ -599,7 +610,219 @@ margin-bottom: 76px;
     background: #55DFB4 0% 0% no-repeat padding-box;
 }
 
+.btn-checkbox{
+    width: 226px;
+    height: 57px;
+    background: #08A6E4 0% 0% no-repeat padding-box;
+    border-radius: 35px;
+    border: none;
+    color: white;
+    opacity: 1;
+    float: right;
+    margin-right: 400px;
+    margin-bottom: 110px ;
 
 
+}
+.contact-container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
 
 
+.contact-box{
+    padding-top: 100px;
+    width: 50%;
+}
+
+
+.contact-header{
+    text-align: left;
+    font: normal normal normal 49px/57px Raleway;
+    color: #000000;
+    opacity: 1;
+    margin-bottom:30px ;
+    padding-left: 15px;
+
+
+}
+.contact-text2{
+    text-align: left;
+    font: normal normal normal 16px/22px Open Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    padding-left: 15px;
+
+}
+.contact-images{
+    display: flex;
+
+}
+.phone{
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+.mail{
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+.contact-images-2{
+    display: flex;
+
+}
+.contact-box{
+
+    padding-left: 400px;
+
+}
+
+
+.all-images{
+    display: flex;
+
+}
+.contact-column{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 190px;
+
+
+}
+.column-name{
+    padding-bottom: 10px;
+
+}
+.checkbox-text{
+    border: none;
+    border-bottom: 1px solid #95989A;
+    opacity: 1;
+    width: 390px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
+
+
+}
+
+.checkbox-text-2{
+    border:none;
+    border-bottom: 1px solid #95989A;
+    opacity: 1;
+    width: 390px;
+    margin-top: 30px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.checkbox{
+    display: flex;
+    text-align: left;
+    font: normal normal bold 11px/15px Open Sans;
+    letter-spacing: 3.28px;
+    color: #08A6E4;
+    opacity: 1;
+    font-family: 'Raleway', sans-serif;
+
+}
+.checkbox-2{
+    display: flex;
+    text-align: left;
+    font: normal normal bold 11px/15px Open Sans;
+    letter-spacing: 3.28px;
+    color: #08A6E4;
+    opacity: 1;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+
+}
+.checkbox-3 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+}
+.checkbox-3 {
+    cursor: pointer;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 400px;
+    font: normal normal normal 12px/17px Open Sans;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+}
+
+
+.checkbox-3 span {
+    height: 24px;
+    flex-basis: 120px;
+    margin-right: 10px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #95989A;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkbox-3 input:checked + span{
+    background-image: url("../BestShop/Checkmark.svg");
+    background-position: center;
+
+
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background: #F7F7F7 0% 0% no-repeat padding-box;
+    box-shadow: 0px -5px 40px #00000029;
+    opacity: 1;
+    padding-bottom: 30px;
+    margin:0 auto;
+
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    margin-left: 130px;
+    padding-top: 3px;
+
+}
+.footer-header{
+    text-align: left;
+    font: normal normal 300 26px/30px Raleway;
+    letter-spacing: 0px;
+    color: #08A6E4;
+    opacity: 1;
+    margin-bottom:20px;
+
+
+}
+.footer-text{
+    text-align: left;
+    font: normal normal normal 11px/15px Open Sans;
+    letter-spacing: 0px;
+    color: #A5A5A5;
+    opacity: 1;
+    padding-bottom: 5px;
+}
+.footer-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 130px;
+    margin-top: 40px;
+}
+.facebook{
+    padding-right: 20px;
+}
