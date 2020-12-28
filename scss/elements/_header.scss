@@ -19,96 +19,112 @@ $button-color: #08A6E4;
 
 .entire__menu__header{
 
-  position: absolute;
-  width: 100%;
-padding-right: 30px;
-padding-top: 20px;
+  @media (min-width: 320px) and (max-width: 870px) {
+
+
+    position: absolute;
+    width: 100%;
+    padding-right: 30px;
+    padding-top: 20px;
+  }
 }
 .header__hamburger{
-  width: $button-size;
-  height: $button-size;
-  display: block;
-  position: relative;
-  background: none;
-float: right;
-  &:after, &:before, span, label{
-    content: ' ';
-    display: block;
-    width: 100%;
-    height: calc-line-height( $button-size );
-    background: $button-color;
-    position: absolute;
-    -webkit-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
-    left: 0;
-  }
-  &:before{
-    top: 0;
-  }
-  &:after{
-    bottom: 0;
-  }
-  &:focus{
-    outline: none;
-  }
-  label{
-    width: 100%;
-    height: 100%;
-    background: none;
-    cursor: pointer;
-    z-index: 1000;
+  @media (min-width: 320px) and (max-width: 870px) {
 
-  }
-  span{
-    top: calc-line-height( $button-size ) * 2;
+    width: $button-size;
+    height: $button-size;
+    display: block;
+    position: relative;
+    background: none;
+    float: right;
+    &:after, &:before, span, label {
+      content: ' ';
+      display: block;
+      width: 100%;
+      height: calc-line-height($button-size);
+      background: $button-color;
+      position: absolute;
+      -webkit-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out;
+      left: 0;
+    }
+    &:before {
+      top: 0;
+    }
+    &:after {
+      bottom: 0;
+    }
+    &:focus {
+      outline: none;
+    }
+    label {
+      width: 100%;
+      height: 100%;
+      background: none;
+      cursor: pointer;
+      z-index: 1000;
+
+    }
+    span {
+      top: calc-line-height( $button-size ) * 2;
+    }
   }
 }
 
 #change-hamburger{
-  display:none;
+  display: none;
+  @media (min-width: 320px) and (max-width: 870px) {
 
-  &:checked ~ .header__hamburger:before, &:checked ~ .header__hamburger:after {
-    top: $button-size / 2;
-  }
-  &:checked ~ .header__hamburger:before{
-    @include css3-rotation(-45deg);
-  }
-  &:checked ~ .header__hamburger:after{
-    @include css3-rotation(45deg);
-  }
-  &:checked ~ .header__hamburger span{
-    opacity: 0;
-  }
-  &:checked ~ .header__menu{
-    max-height: 200px;
+    display: none;
+
+    &:checked ~ .header__hamburger:before, &:checked ~ .header__hamburger:after {
+      top: $button-size / 2;
+    }
+    &:checked ~ .header__hamburger:before {
+      @include css3-rotation(-45deg);
+    }
+    &:checked ~ .header__hamburger:after {
+      @include css3-rotation(45deg);
+    }
+    &:checked ~ .header__hamburger span {
+      opacity: 0;
+    }
+    &:checked ~ .header__menu {
+      max-height: 200px;
+    }
   }
 }
 .header__menu{
-  max-height: 0;
-  height: auto;
-  background: #ffffff;
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-  overflow: hidden;
-  font-family: sans-serif;
-  font-weight: 400;
-  font-size: 13px ;
-  width: 25%;
-  flex-direction: column;
-  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 320px) and (max-width: 870px) {
+
+    max-height: 0;
+    height: auto;
+    background: #ffffff;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    overflow: hidden;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    width: 25%;
+    flex-direction: column;
+    float: right;
 
 
-  a {
-    text-decoration: none;
-    color: $button-color;
-    padding: 5px 10px;
-    display: block;
+    a {
+      text-decoration: none;
+      color: $button-color;
+      padding: 5px 10px;
+      display: block;
 
-    &:hover{
-      transition: 0.4s;
+      &:hover {
+        transition: 0.4s;
+      }
     }
   }
-
 }
 
 
@@ -134,4 +150,28 @@ float: right;
   padding-left: 30px;
   display: flex;
   align-items: center;
+}
+
+.nav__link{
+  color: #A5A5A5;
+  font-weight: 700;
+  font-size: 0.8em;
+  font-family: sans-serif;
+
+  text-transform: uppercase;
+  padding: 28px 18px 15px;
+  border-bottom: 4px solid transparent;
+  letter-spacing: 0.1875rem;
+text-decoration: none;
+  margin-right: 80px;
+  @media (min-width: 320px) and (max-width: 870px) {
+    margin: 0;
+    padding: 0;
+  }
+
+    &:hover{
+    color: #000000;
+    border-color: #08A6E4;
+  }
+
 }
