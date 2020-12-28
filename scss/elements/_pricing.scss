@@ -37,6 +37,8 @@ font-size: 1rem;
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
+  margin: 100px 0;
+  font-weight: 800;
   @media (min-width: 320px) and (max-width: 870px) {
     margin-top: 10px ;
   }
@@ -54,7 +56,12 @@ font-size: 1rem;
     align-items: center;
 
   }
-
+  @media (min-width: 870px) and (max-width: 1366px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   }
 
 
@@ -70,7 +77,8 @@ font-size: 1rem;
     @include pricingStyles;
 
   }
-
+  @media (min-width: 870px) and (max-width: 1366px) {
+  }
 }
 
 .pricing__box__2{
@@ -87,7 +95,9 @@ font-size: 1rem;
     height: 440px;
     margin-top: 40px;
   }
-
+  @media (min-width: 870px) and (max-width: 1366px) {
+    margin-top: 60px;
+  }
   }
 
 .pricing__box__3{
@@ -101,6 +111,9 @@ font-size: 1rem;
   @media (min-width: 320px) and (max-width: 870px) {
  @include pricingStyles;
   }
+  @media (min-width: 870px) and (max-width: 1366px) {
+    margin-top: 40px;
+  }
 }
 
 .pricing__title{
@@ -110,6 +123,7 @@ font-size: 1rem;
   color: #13253B;
   opacity: 1;
   margin-top: 40px;
+  font-weight: 800;
   @media (min-width: 320px) and (max-width: 870px) {
     @include pricingTitle;
   }
@@ -153,13 +167,13 @@ font-size: 1rem;
 
 .pricing__text{
   margin-top: 30px;
-  @media (min-width: 320px) and (max-width: 1024px) {
+  @media (min-width: 320px) and (max-width: 870px) {
     @include pricingText;
   }
 }
 .pricing__text__3{
   margin-top: 25px;
-  @media (min-width: 320px) and (max-width: 1024px) {
+  @media (min-width: 320px) and (max-width: 870px) {
     @include pricingText;
   }
 }
@@ -255,7 +269,7 @@ font-size: 1rem;
   text-decoration: none;
   color: white;
   padding: 25px 75px;
-
+font-weight: 800;
   @media (min-width: 320px) and (max-width: 870px) {
     padding: 15px 65px ;
   }
@@ -268,6 +282,8 @@ font-size: 1rem;
   color: white;
   margin-top: 20px;
   background: #07ACE6 0% 0% no-repeat padding-box;
+  font-weight: 800;
+
   @media (min-width: 320px) and (max-width: 870px) {
     padding: 15px 65px;
   }
@@ -280,6 +296,8 @@ font-size: 1rem;
   opacity: 1;
   color: white;
   background: #55DFB4 0% 0% no-repeat padding-box;
+  font-weight: 800;
+
   @media (min-width: 320px) and (max-width: 870px) {
     padding: 15px 65px ;
   }
