@@ -90,14 +90,14 @@ margin-right: 150px;
   margin-right: 20px;
   margin-left: 20px;
   @media (min-width: 320px) and (max-width: 870px) {
-    margin-right: 53px;
-    margin-top: 5px;
   }
 }
 .mail{
   margin-right: 20px;
   margin-left: 20px;
-
+  @media (min-width: 320px) and (max-width: 870px) {
+margin-left: 60px;
+  }
 }
 .contact__images__2{
   display: flex;
@@ -124,6 +124,7 @@ margin-right: 150px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-right: 60px;
   }
 }
 .contact__column{
